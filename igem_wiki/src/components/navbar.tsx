@@ -1,6 +1,8 @@
 function Navbar() {
     return(
-        <p>hi</p>
+        <>
+            <p>Navbar!</p>
+        </>
     )
     
 }
