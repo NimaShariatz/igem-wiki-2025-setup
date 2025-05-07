@@ -1,3 +1,5 @@
+import "./component.css"
+
 import {
     mansell
 } from "../static/constants.tsx"

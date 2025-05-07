@@ -1,4 +1,4 @@
-
+import "./component.css"
 
 
 function Carousel() {

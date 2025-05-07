@@ -1,3 +1,5 @@
+import "./component.css"
+
 function Navbar() {
     return(
         <>
