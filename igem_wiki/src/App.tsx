@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./Global.css"
 
-import Description from "./pages/description.tsx"; 
+import Description from "./pages/descriptive layout/description.tsx"; 
 
 
 

@@ -1,0 +1,17 @@
+
+
+.content_wrapper{
+    background-color: beige;
+
+    display: flex;
+    flex-direction: row;
+    padding-inline: 5vw;
+
+    
+}
+.descriptive_content{
+    justify-items: center;
+    background-color: rgb(214, 244, 240);
+    width: 100%;
+    
+}
