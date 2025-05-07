@@ -3,7 +3,9 @@ Work done before transfer to 2025 GitLab
 
 
 
-yarn is used for installing dependencies and running react
+yarn is used for installing dependencies and running react. To install yarn, do
+
+`npm install -g corepack`
 
 cd to `igem_wiki` and run `yarn install` followed by `yarn run dev`
 
