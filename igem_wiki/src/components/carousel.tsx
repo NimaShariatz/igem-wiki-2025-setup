@@ -4,7 +4,7 @@ import "./component.css"
 function Carousel() {
     return (
         <>
-        <p>Carousel</p>
+            <p>Carousel</p>
         </>
     )
 }

@@ -4,10 +4,12 @@ import PopupLink from "../../components/popuplink.tsx"
 import PopupImg from "../../components/popupimg.tsx"
 import Carousel from "../../components/carousel.tsx"
 import ProgressTracker from "../../components/progressTracker.tsx"
+import Accordion from "../../components/accordion.tsx"
 
 import "./descriptive.css"
 
 import Example_args from "../../components/example_args.tsx" //temporary
+import { mansell } from "../../static/constants.tsx"
 
 
 
@@ -29,20 +31,23 @@ function Description() {
                 <div className="descriptive_content">
                     <br/>
                     <br/>
-                    <p>Carousel Lorem ipsum dolor sit, <PopupLink/> amet consectetur adipisicing elit. Accusantium illo repellendus quia reiciendis perferendis! 
+                    <p>Carousel Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium illo repellendus quia reiciendis perferendis! 
                         Iste minus sapiente soluta asperiores sint eveniet officiis quae, qui porro magni amet nostrum necessitatibus cupiditate. 
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe officiis vel cumque. Fuga voluptates neque dicta velit ea! 
                         Omnis assumenda delectus, praesentium qui nam fugit impedit. Ipsum atque cupiditate nesciunt? Lorem ipsum dolor sit amet 
                         consectetur adipisicing elit. Tenetur temporibus nesciunt, odit quo consectetur laboriosam sit dignissimos iusto voluptatum 
                         sequi cumque, soluta ratione? Atque officiis dolor, recusandae possimus eligendi maiores? Lorem ipsum dolor sit, amet consectetur 
                         adipisicing elit. Blanditiis tempora alias soluta, dolor doloremque, rem dicta modi temporibus 
-                        quasi nesciunt deleniti dolorum dolores amet reiciendis 
-                        possimus eaque voluptas adipisci sapiente!
+                        quasi nesciunt deleniti dolorum  dolores amet reiciendis 
+                        possimus eaque voluptas adipisci sapiente! <PopupLink/>
                     </p>
                     
                     <br/>
                     <br/>
-                    <PopupImg/>
+                    <PopupImg our_img={mansell} optional_number={4} optional_caption={"some caption for image"} />
+                    <br/>
+                    <br/>
+                    <Accordion/>
                     <br/>
                     <br/>
                     <Carousel/>

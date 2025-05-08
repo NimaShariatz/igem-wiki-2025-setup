@@ -6,6 +6,7 @@
     display: flex;
     flex-direction: row;
     padding-inline: 5vw;
+    justify-content: center;
 
     
 }
@@ -13,5 +14,6 @@
     justify-items: center;
     background-color: rgb(214, 244, 240);
     width: 100%;
+    max-width: 1400px;
     
 }
