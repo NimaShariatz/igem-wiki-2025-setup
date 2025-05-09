@@ -1,10 +1,10 @@
-import Navbar from "../../components/navbar.tsx"
-import Footer from "../../components/footer.tsx"
-import PopupLink from "../../components/popuplink.tsx"
-import PopupImg from "../../components/popupimg.tsx"
-import Carousel from "../../components/carousel.tsx"
-import ProgressTracker from "../../components/progressTracker.tsx"
-import Accordion from "../../components/accordion.tsx"
+import Navbar from "../../components/navbar/navbar.tsx"
+import Footer from "../../components/footer/footer.tsx"
+import PopupLink from "../../components/popuplink/popuplink.tsx"
+import PopupImg from "../../components/popupimg/popupimg.tsx"
+import Carousel from "../../components/carousel/carousel.tsx"
+import ProgressTracker from "../../components/progressTracker/progressTracker.tsx"
+import Accordion from "../../components/accordion/accordion.tsx"
 
 import "./descriptive.css"
 

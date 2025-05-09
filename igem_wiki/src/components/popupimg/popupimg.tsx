@@ -1,5 +1,5 @@
 import { useState } from "react";//for popup
-import "./component.css"
+import "./popupimg.css"
 
 
 

@@ -1,4 +1,4 @@
-import "./component.css"
+import "./popuplink.css"
 
 import { Outlet, Link } from "react-router-dom";
 
