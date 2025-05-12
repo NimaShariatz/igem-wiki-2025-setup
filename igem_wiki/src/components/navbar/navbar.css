@@ -7,7 +7,7 @@
     width: 100%;
     height: 8%;
     background-color: white;
-    z-index: 10;
+    z-index: 1000;
 }
 
 .navbar-container ul{
@@ -17,7 +17,9 @@
     justify-content: center;
     margin: 0 0 0 16em;
 }
-
+.navbar-container li{
+    padding: 0.7em 0;
+}
 .menu-option{
     /* makes text unselectable, but not good for accessability*/
     user-select: none;
@@ -28,32 +30,53 @@
 .popup {
     position: absolute;
     height: 310px;
-    top:85%;
+    top:90%;
     left: 18vw;
     right: 18vw;
     background-color: rgb(255, 255, 255);
     pointer-events: none;
     opacity: 0;
-    transform: translateX(0);
     transition: all 0.3s linear;
+    z-index: 100;
+    border-radius: 10px;
 }
-.navbar-container li:hover .popup{
+.navbar-container li:hover .popup {
     pointer-events: auto;
     opacity: 1;
 }
 .navbar-container li:hover .popup.show-left{
-    transform: translateX(-5%);
-    animation: slide-in-left 0.3s forwards;
+    pointer-events: auto;
+    animation: slide-in-left 0.6s forwards;
 
 }
 .navbar-container li:hover .popup.show-right{
-    transform: translateX(5%);
-    animation: slide-in-right 0.3s forwards;
+    pointer-events: auto;
+    animation: slide-in-right 0.6s forwards;
 
 }
+
+
+
+/* Popup content */
+.popup-content{
+    display:flex;
+    justify-content: space-between;
+    padding: 3em 3em;
+    height: 100%;
+}
+.menu-options-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menu-options-section a{
+    padding-bottom: 2em;
+}
+
+/* Popup animation */
 @keyframes slide-in-left {
     from {
-        transform: translateX(-5%);
+        transform: translateX(10%);
     }
     to {
         transform: translateX(0);
@@ -62,7 +85,7 @@
 
 @keyframes slide-in-right {
     from {
-        transform: translateX(5%);
+        transform: translateX(-10%);
     }
     to {
         transform: translateX(0);

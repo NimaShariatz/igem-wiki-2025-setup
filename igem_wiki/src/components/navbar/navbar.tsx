@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 import "./navbar.css"
 
@@ -8,10 +9,6 @@ function Navbar() {
     // if False and isOpen is True, the popup will be on the left of the cursor
     // if True isOpen is True, the popup will be on the right of the cursor
     const [goLeft, setGoLeft] = useState<boolean | null>(null);
-
-    console.log("isOpen: ", isOpen)
-    console.log("cursorLocation: ", cursorLocation)
-    console.log("goLeft: ", goLeft)
 
     /* 
     This function handles the mouse enter event for the menu options.
@@ -38,43 +35,79 @@ function Navbar() {
                 <li>
                     <p className="menu-option">Home</p>
                 </li>
-                <li>
-                    <p className="menu-option" onMouseEnter={(event)=>{handleMouseEnter(event)}}>Projects</p>
+                <li onMouseEnter={(event)=>{handleMouseEnter(event)}}>
+                    <p className="menu-option">Projects</p>
                     <div className={`popup ${isOpen ? (goLeft === true ? "show-right" : (goLeft === false ? "show-left" : "")) : ""}`}>
-                        <div className="projects-popup">
-                            <h1>Projects</h1>
+                        <div className="projects-popup popup-content">
+                            <div className="menu-text-section">
+                                <h1>Projects</h1>
+                            </div>
+                            <div className="menu-options-section">
+                                <Link to="/">Project Description</Link>
+                                <Link to="/">Engineering Success</Link>
+                                <Link to="/">Future Directions</Link>
+                                <Link to="/">Contribution</Link>
+                            </div>
                         </div>
                     </div>
                 </li>
-                <li>
-                    <p className="menu-option" onMouseEnter={(event)=>{handleMouseEnter(event)}}>Wet Lab</p>
+                <li onMouseEnter={(event)=>{handleMouseEnter(event)}}>
+                    <p className="menu-option">Wet Lab</p>
                     <div className={`popup ${isOpen ? (goLeft === true ? "show-right" : (goLeft === false ? "show-left" : "")) : ""}`}>
-                        <div className="wet-popup">
-                            <h1>Wet Lab</h1>
+                        <div className="wet-popup popup-content">
+                            <div className="menu-text-section">
+                                <h1>Wet Lab</h1>
+                            </div>
+                            <div className="menu-options-section">
+                                <Link to="/">Notebook</Link>
+                                <Link to="/">Experiments & Results</Link>
+                                <Link to="/">Standard Operating Procedures</Link>
+                                <Link to="/">Safety</Link>
+                            </div>
                         </div>
                     </div>
                 </li>
-                <li>
-                    <p className="menu-option" onMouseEnter={(event)=>{handleMouseEnter(event)}}>Dry Lab</p>
+                <li onMouseEnter={(event)=>{handleMouseEnter(event)}}>
+                    <p className="menu-option">Dry Lab</p>
                     <div className={`popup ${isOpen ? (goLeft === true ? "show-right" : (goLeft === false ? "show-left" : "")) : ""}`}>
-                        <div className="dry-popup">
-                            <h1>Dry Lab</h1>
+                        <div className="dry-popup popup-content">
+                            <div className="menu-text-section">
+                                <h1>Dry Lab</h1>
+                            </div>
+                            <div className="menu-options-section">
+                                <Link to="/">Modeling</Link>
+                                <Link to="/">Parts</Link>
+                                <Link to="/">Software</Link>
+                            </div>
                         </div>
                     </div>
                 </li>
-                <li>
-                    <p className="menu-option" onMouseEnter={(event)=>{handleMouseEnter(event)}}>Human Practices</p>
+                <li onMouseEnter={(event)=>{handleMouseEnter(event)}}>
+                    <p className="menu-option">Human Practices</p>
                     <div className={`popup ${isOpen ? (goLeft === true ? "show-right" : (goLeft === false ? "show-left" : "")) : ""}`}>
-                        <div className="human-popup">
-                            <h1>Human Practices</h1>
+                        <div className="human-popup popup-content">
+                            <div className="menu-text-section">
+                                <h1>Human Practices</h1>
+                            </div>
+                            <div className="menu-options-section">
+                                <Link to="/">Integrated Human Practices</Link>
+                                <Link to="/">Education</Link>
+                            </div>
                         </div>
                     </div>
                 </li>
-                <li>
-                    <p className="menu-option" onMouseEnter={(event)=>{handleMouseEnter(event)}}>Team</p>
+                <li onMouseEnter={(event)=>{handleMouseEnter(event)}}>
+                    <p className="menu-option">Team</p>
                     <div className={`popup ${isOpen ? (goLeft === true ? "show-right" : (goLeft === false ? "show-left" : "")) : ""}`}>
-                        <div className="team-popup">
-                            <h1>Team</h1>
+                        <div className="team-popup popup-content">
+                            <div className="menu-text-section">
+                                <h1>Team</h1>
+                            </div>
+                            <div className="menu-options-section">
+                                <Link to="/">Members</Link>
+                                <Link to="/">Attributions</Link>
+                                <Link to="/">Sponsors</Link>
+                            </div>
                         </div>
                     </div>
                 </li>
