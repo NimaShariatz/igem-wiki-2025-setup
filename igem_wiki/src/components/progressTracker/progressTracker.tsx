@@ -5,6 +5,13 @@ function ProgressTracker() {
     return (
         <>
             <div className="progressTracker_container">
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
                 <p>ProgressTracker</p>
             </div>
         </>
