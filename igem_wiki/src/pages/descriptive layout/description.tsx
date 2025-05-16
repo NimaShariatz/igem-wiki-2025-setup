@@ -9,7 +9,7 @@ import Accordion from "../../components/accordion/accordion.tsx"
 import "./descriptive.css"
 
 import Example_args from "../../components/example_args.tsx" //temporary
-import { mansell } from "../../static/constants.tsx"
+import { mansell, prost } from "../../static/constants.tsx"
 
 
 
@@ -44,7 +44,7 @@ function Description() {
                     
                     <br/>
                     <br/>
-                    <PopupImg our_img={mansell} optional_number={4} optional_caption={"some caption for image"} />
+                    <PopupImg our_img={mansell} alt_text={"Nigel Mansell"} optional_number={4} optional_caption={"some caption for image"} />
                     <br/>
                     <br/>
                     <Accordion/>
